@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="23192" started-at="2021-04-21T16:55:09 IST" finished-at="2021-04-21T16:55:33 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="23192" started-at="2021-04-21T16:55:09 IST" finished-at="2021-04-21T16:55:33 IST">
+      <class name="com.amazon.testPages.AmazonCart">
+        <test-method status="PASS" signature="Cart()[pri:4, instance:com.amazon.testPages.AmazonCart@6b57696f]" name="Cart" duration-ms="4488" started-at="2021-04-21T16:55:28 IST" finished-at="2021-04-21T16:55:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cart -->
+      </class> <!-- com.amazon.testPages.AmazonCart -->
+      <class name="com.amazon.testPages.AmazonProductPage">
+        <test-method status="PASS" signature="ProductPage()[pri:3, instance:com.amazon.testPages.AmazonProductPage@58c1670b]" name="ProductPage" duration-ms="10489" started-at="2021-04-21T16:55:18 IST" finished-at="2021-04-21T16:55:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductPage -->
+      </class> <!-- com.amazon.testPages.AmazonProductPage -->
+      <class name="com.amazon.testPages.AmazonSearch">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.testPages.AmazonSearch@587d1d39]" name="setup" is-config="true" duration-ms="75480" started-at="2021-04-21T16:53:54 IST" finished-at="2021-04-21T16:55:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="search()[pri:2, instance:com.amazon.testPages.AmazonSearch@587d1d39]" name="search" duration-ms="8160" started-at="2021-04-21T16:55:09 IST" finished-at="2021-04-21T16:55:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- com.amazon.testPages.AmazonSearch -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
