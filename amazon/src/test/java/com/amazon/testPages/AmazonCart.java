@@ -15,7 +15,7 @@ public class AmazonCart extends AmazonBase
                 System.out.println(
                         "CartPage Name: " + androidDriver.findElement(By.className("android.widget.Image")).getText());
                 
-                productName2 = androidDriver.findElement(By.className("android.widget.Image")).getText();
+                productName2 = androidDriver.findElement(By.className(paths.getString("productName2"))).getText();
 
                 productPriceToCompare.append(paths.getString("rupeeSymbol") + productPrice + paths.getString("suffix"));
                 
@@ -23,7 +23,7 @@ public class AmazonCart extends AmazonBase
                         "//android.view.View[@text='"+ productPriceToCompare +"']")).getText());
                 
                 productPrice2 = androidDriver.findElement(By.xpath(
-                        "//android.view.View[@text='"+ productPriceToCompare +"']")).getText();
+                        paths.getString("productPrice2-one")+ productPriceToCompare + paths.getString("productPrice2-two"))).getText();
                 
 
                 //Perform Assertions...

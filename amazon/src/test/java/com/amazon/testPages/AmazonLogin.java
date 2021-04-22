@@ -17,13 +17,20 @@ public class AmazonLogin extends AmazonBase
                 //click(paths.getString("SignInButton_xpath"));
 
                 click(paths.getString("alreadyCustomer_xpath"));
+                    log.debug("Clicked on already a customer? sign in button");
+                    
                 type(paths.getString("usernamePath_xpath"), credentials.getString("username"));
+                    log.info("Entered username");
 
                 new WebDriverWait(driver, 10).until(
                         ExpectedConditions.presenceOfElementLocated(By.xpath(paths.getString("buttonContinue_xpath"))));
+                    log.info("WebDriver wait initiated for 'Continue' button");
 
                 click(paths.getString("buttonContinue_xpath"));
+                    log.info("Clicked on 'Continue' button");
+                    
                 type(paths.getString("passwordPath_xpath"), credentials.getString("password"));
+                    log.info("Entered password");
 
                 click(paths.getString("submit_xpath"));
                 

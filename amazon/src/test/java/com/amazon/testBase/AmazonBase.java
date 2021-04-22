@@ -71,6 +71,11 @@ public class AmazonBase
             {
                 androidDriver.findElement(By.xpath(locator));
             }
+        
+        public void findByScrolling(String locator)
+            {
+                androidDriver.findElementByAndroidUIAutomator(locator).click();
+            }
 
         public void click(String locator)
             {

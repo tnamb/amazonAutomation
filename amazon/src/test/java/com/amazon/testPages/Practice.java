@@ -1,22 +1,20 @@
 package com.amazon.testPages;
 
+
+import org.apache.log4j.Logger;
+
 import com.amazon.testBase.AmazonBase;
 
 public class Practice extends AmazonBase
     {
+        static Logger log = Logger.getLogger(Practice.class);
+        
         public static void main(String[] args)
         {
-            String price = "2,150";
+            productName = "buy vodafone tv 64 inch aksjdlajdad asdlasdk";
             
-            //System.out.println(price.substring(7, price.length()));
+            if (productName.startsWith("buy"))
+                System.out.println(productName = productName.substring(4));
             
-            if (price.contains("2"))
-                price = price.substring(1);
-            
-            StringBuilder str = new StringBuilder();
-            
-            System.out.println(price);
-            
-
         }
     }

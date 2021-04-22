@@ -24,14 +24,14 @@ public class AmazonSearch extends AmazonBase
 
                 List<AndroidElement> list = androidDriver.findElements(By.className(paths.getString("listClassName")));
                 int index = RandomNumber(list.size());
-                
+
                 System.out.println("index: " + index + " listSize: " + list.size());
 
                 find(paths.getString("listWidget_xpath"));
                 androidDriver
-                        .findElementByAndroidUIAutomator(paths.getString("scroll1") + 5 + paths.getString("scroll2"))
+                        .findElementByAndroidUIAutomator(paths.getString("scroll1") + 4 + paths.getString("scroll2"))
                         .click();
 
-                log.info("Search successful");
+                log.debug("Search successful");
             }
     }
