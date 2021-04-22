@@ -25,6 +25,8 @@ public class AmazonProductPage extends AmazonBase
                 findByScrolling(paths.getString("scroll"));
                     log.info("Item added to cart");
 
-                click(paths.getString("goToCart"));                   
+                click(paths.getString("goToCart"));    
+                
+                    log.info("Entered cart");
             }
     }

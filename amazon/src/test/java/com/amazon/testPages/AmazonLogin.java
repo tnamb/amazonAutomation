@@ -1,12 +1,9 @@
 package com.amazon.testPages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.amazon.testBase.AmazonBase;
-
 
 public class AmazonLogin extends AmazonBase
     {
@@ -18,16 +15,18 @@ public class AmazonLogin extends AmazonBase
                                       
                     Assert.assertTrue(isElementPresent(By.xpath(paths.getString("usernamePath_xpath"))), "Username text field is not visible");
                 type(paths.getString("usernamePath_xpath"), credentials.getString("username"));                              
+                    log.info("Entered username");
                 
                     Assert.assertTrue(isElementPresent(By.xpath(paths.getString("buttonContinue_xpath"))), "Continue button is not visible");
                 click(paths.getString("buttonContinue_xpath"));
-                                        
+                                    
                     Assert.assertTrue(isElementPresent(By.xpath(paths.getString("passwordPath_xpath"))), "Password textfield is not visible");
                 type(paths.getString("passwordPath_xpath"), credentials.getString("password"));
-                    
+                    log.info("Entered password");
+                
                     Assert.assertTrue(isElementPresent(By.xpath(paths.getString("submit_xpath"))), "Submit button is not visible");
                 click(paths.getString("submit_xpath"));
                 
-                log.info("Login successful");
+                    log.info("Login successful");
             }
     }

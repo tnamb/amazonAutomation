@@ -25,6 +25,7 @@ public class AmazonBase
         public static Logger log = Logger.getLogger("DEBUG");
         public static AndroidElement webViewElement;
         public static URL url;
+        public static int searchIndex;
         static DesiredCapabilities caps = new DesiredCapabilities();
         public static StringBuilder productPriceToCompare = new StringBuilder();
 
@@ -40,7 +41,6 @@ public class AmazonBase
         @BeforeSuite
         public void setup() throws MalformedURLException
             {
-
                 caps.setCapability("deviceName", credentials.getString("deviceName"));
                 caps.setCapability("udid", credentials.getString("udid"));
 

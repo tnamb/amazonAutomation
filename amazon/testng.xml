@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-<class name="com.amazon.testPages.AmazonLogin"/>  	  	
-<!-- <class name="com.amazon.testPages.AmazonSearch"/>
-<class name="com.amazon.testPages.AmazonProductPage"/>
+<!-- <class name="com.amazon.testPages.AmazonLogin"/>   -->	  	
+<class name="com.amazon.testPages.AmazonSearch"/>
+<!-- <class name="com.amazon.testPages.AmazonProductPage"/>
 <class name="com.amazon.testPages.AmazonCart"/> -->
 <!-- <class name="com.amazon.testPages.AmazonLogout"/> -->
   </classes>
