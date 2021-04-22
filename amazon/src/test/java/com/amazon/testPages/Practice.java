@@ -11,10 +11,23 @@ public class Practice extends AmazonBase
         
         public static void main(String[] args)
         {
-            productName = "buy vodafone tv 64 inch aksjdlajdad asdlasdk";
+            productName = "amazon.in buy vodafone tv 64 inch aksjdlajdad asdlasdk";
+            productName2 = "vodafone tv 64 inch aksjdlajdad asdlasdk: amazon.in: amazon.in";
             
-            if (productName.startsWith("buy"))
-                System.out.println(productName = productName.substring(4));
+                
+                /*
+                 * if (productName.startsWith("amazon.in")) productName =
+                 * productName.substring(10);
+                 * 
+                 * if (productName.startsWith("buy")) productName = productName.substring(4);
+                 */
+                 
+            String abc = "?1,10,990.00";
+            abc = abc.substring(1, abc.length()-3);
+           
+            
+            System.out.println(abc);
+
             
         }
     }

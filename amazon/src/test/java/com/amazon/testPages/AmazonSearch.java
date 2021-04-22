@@ -18,7 +18,7 @@ public class AmazonSearch extends AmazonBase
 
                 type(paths.getString("searchBar_xpath"), paths.getString("searchParameter"));
 
-                log.info("Search paramerter entered: " + paths.getString("searchParameter"));
+                    log.info("Search paramerter entered: " + paths.getString("searchParameter"));
 
                 click(paths.getString("enterKey"));
 
@@ -29,9 +29,9 @@ public class AmazonSearch extends AmazonBase
 
                 find(paths.getString("listWidget_xpath"));
                 androidDriver
-                        .findElementByAndroidUIAutomator(paths.getString("scroll1") + 4 + paths.getString("scroll2"))
+                        .findElementByAndroidUIAutomator(paths.getString("scroll1") + index + paths.getString("scroll2"))
                         .click();
 
-                log.debug("Search successful");
+                    log.debug("Search successful");
             }
     }
