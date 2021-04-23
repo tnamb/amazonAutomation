@@ -1,5 +1,27 @@
-13:23:08,604  INFO DEBUG:37 - AmazonSearch: 
-13:23:12,002  INFO DEBUG:42 - AmazonSearch: Search paramerter entered: 65-inch TV
-13:23:17,278  INFO DEBUG:53 - AmazonSearch: Search index generated
-13:23:18,659  INFO DEBUG:61 - AmazonSearch: Search successful
-13:23:18,659  INFO DEBUG:62 - ----------------
+13:54:55,443  INFO DEBUG:13 - AmazonLogin: 
+13:54:58,846  INFO DEBUG:19 - AmazonLogin: Entered username
+13:55:03,537  INFO DEBUG:28 - AmazonLogin: Entered password
+13:55:05,332  INFO DEBUG:35 - AmazonLogin: Login successful
+13:55:05,332  INFO DEBUG:36 - ----------------
+13:55:06,635  INFO DEBUG:26 - AmazonSearch: 
+13:55:16,179  INFO DEBUG:31 - AmazonSearch: Search paramerter entered: 65-inch TV
+13:55:21,543  INFO DEBUG:44 - AmazonSearch: Search index generated
+13:55:23,824  INFO DEBUG:54 - AmazonSearch: Search successful
+13:55:23,824  INFO DEBUG:55 - ----------------
+13:55:27,060  INFO DEBUG:16 - AmazonProductPage: 
+13:55:27,925  INFO DEBUG:18 - AmazonProductPage: PRODUCT NAME: Sony Bravia 164 cm 4K Ultra HD Smart Certified Android: Amazon.in: Electronics
+13:55:28,430  INFO DEBUG:20 - AmazonProductPage: PRODUCT PRICE: rupees 1,51,990
+13:56:02,244  INFO DEBUG:30 - AmazonProductPage: Item added to cart
+13:56:05,363  INFO DEBUG:34 - AmazonProductPage: Product page exited successfully
+13:56:05,364  INFO DEBUG:35 - ----------------
+13:56:05,368  INFO DEBUG:13 - AmazonCart:
+13:56:09,301  INFO DEBUG:16 - AmazonCart: ProductName2:Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart Certified Android LED TV 65X9000H (Black) (2020 Model)
+13:56:11,298  INFO DEBUG:28 - **********************
+13:56:11,298  INFO DEBUG:29 - AmazonCart: ProductName: Sony Bravia 164 cm 4K Ultra HD Smart Cer
+13:56:11,298  INFO DEBUG:30 - AmazonCart: ProductPrice: 1,51,990
+13:56:11,299  INFO DEBUG:31 - 
+13:56:11,299  INFO DEBUG:32 - AmazonCart: ProductName2: Sony Bravia 164 cm (65 inches) 4K Ultra 
+13:56:11,299  INFO DEBUG:33 - AmazonCart: ProductPrice2: 1,51,990
+13:56:11,299  INFO DEBUG:34 - **********************
+13:56:11,307  INFO DEBUG:13 - AmazonLogout: 
+13:56:18,132  INFO DEBUG:28 - Logout successful
