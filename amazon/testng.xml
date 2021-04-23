@@ -5,9 +5,9 @@
   <classes>
 <!-- <class name="com.amazon.testPages.AmazonLogin"/>   -->	  	
 <class name="com.amazon.testPages.AmazonSearch"/>
-<!-- <class name="com.amazon.testPages.AmazonProductPage"/>
-<class name="com.amazon.testPages.AmazonCart"/> -->
-<!-- <class name="com.amazon.testPages.AmazonLogout"/> -->
+<class name="com.amazon.testPages.AmazonProductPage"/>
+<class name="com.amazon.testPages.AmazonCart"/>
+<class name="com.amazon.testPages.AmazonLogout"/>
   </classes>
   </test> 
 </suite> 

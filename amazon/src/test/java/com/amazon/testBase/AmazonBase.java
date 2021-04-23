@@ -54,7 +54,6 @@ public class AmazonBase
                 caps.setCapability("resetKeyboard", credentials.getString("resetKeyboard"));
 
                 url = new URL(credentials.getString("URL"));
-                // driver = new AppiumDriver<MobileElement>(url, caps);
                 androidDriver = new AndroidDriver<AndroidElement>(url, caps);
 
                 androidDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

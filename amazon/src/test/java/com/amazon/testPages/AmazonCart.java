@@ -13,22 +13,20 @@ public class AmazonCart extends AmazonBase
             {   
                 productPrice = productPrice.substring(7, productPrice.length());
                 
-                System.out.println(
+                    log.info(
                         "CartPage Name: " + androidDriver.findElement(By.className(paths.getString("productName2"))).getText());
                 
                 productName2 = androidDriver.findElement(By.className(paths.getString("productName2"))).getText();
 
                 productPriceToCompare.append(paths.getString("rupeeSymbol") + productPrice + paths.getString("suffix"));
                 
-                System.out.println("CartPage Price: " + androidDriver.
+                    log.info("CartPage Price: " + androidDriver.
                         findElement(By.xpath(paths.getString("productPrice2-one")+ productPriceToCompare + 
                                 paths.getString("productPrice2-two"))).getText());
                 
                 productPrice2 = androidDriver.findElement(By.xpath(
                         paths.getString("productPrice2-one")+ productPriceToCompare + paths.getString("productPrice2-two"))).getText();
-                
-                //Perform Assertions...
-                
+                              
                 makeEqualInLength(productName, productName2);
                 trimPrice();
                 

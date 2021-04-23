@@ -27,6 +27,8 @@ public class Practice extends AmazonBase
            
             
             System.out.println(abc);
+            
+            log.info("I'm in practice");
 
             
         }
