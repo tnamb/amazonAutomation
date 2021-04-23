@@ -1,27 +1,29 @@
-13:54:55,443  INFO DEBUG:13 - AmazonLogin: 
-13:54:58,846  INFO DEBUG:19 - AmazonLogin: Entered username
-13:55:03,537  INFO DEBUG:28 - AmazonLogin: Entered password
-13:55:05,332  INFO DEBUG:35 - AmazonLogin: Login successful
-13:55:05,332  INFO DEBUG:36 - ----------------
-13:55:06,635  INFO DEBUG:26 - AmazonSearch: 
-13:55:16,179  INFO DEBUG:31 - AmazonSearch: Search paramerter entered: 65-inch TV
-13:55:21,543  INFO DEBUG:44 - AmazonSearch: Search index generated
-13:55:23,824  INFO DEBUG:54 - AmazonSearch: Search successful
-13:55:23,824  INFO DEBUG:55 - ----------------
-13:55:27,060  INFO DEBUG:16 - AmazonProductPage: 
-13:55:27,925  INFO DEBUG:18 - AmazonProductPage: PRODUCT NAME: Sony Bravia 164 cm 4K Ultra HD Smart Certified Android: Amazon.in: Electronics
-13:55:28,430  INFO DEBUG:20 - AmazonProductPage: PRODUCT PRICE: rupees 1,51,990
-13:56:02,244  INFO DEBUG:30 - AmazonProductPage: Item added to cart
-13:56:05,363  INFO DEBUG:34 - AmazonProductPage: Product page exited successfully
-13:56:05,364  INFO DEBUG:35 - ----------------
-13:56:05,368  INFO DEBUG:13 - AmazonCart:
-13:56:09,301  INFO DEBUG:16 - AmazonCart: ProductName2:Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart Certified Android LED TV 65X9000H (Black) (2020 Model)
-13:56:11,298  INFO DEBUG:28 - **********************
-13:56:11,298  INFO DEBUG:29 - AmazonCart: ProductName: Sony Bravia 164 cm 4K Ultra HD Smart Cer
-13:56:11,298  INFO DEBUG:30 - AmazonCart: ProductPrice: 1,51,990
-13:56:11,299  INFO DEBUG:31 - 
-13:56:11,299  INFO DEBUG:32 - AmazonCart: ProductName2: Sony Bravia 164 cm (65 inches) 4K Ultra 
-13:56:11,299  INFO DEBUG:33 - AmazonCart: ProductPrice2: 1,51,990
-13:56:11,299  INFO DEBUG:34 - **********************
-13:56:11,307  INFO DEBUG:13 - AmazonLogout: 
-13:56:18,132  INFO DEBUG:28 - Logout successful
+14:33:10,014  INFO DEBUG:13 - AmazonLogin: 
+14:33:13,284  INFO DEBUG:19 - AmazonLogin: Entered username
+14:33:17,951  INFO DEBUG:28 - AmazonLogin: Entered password
+14:33:19,823  INFO DEBUG:35 - AmazonLogin: Login successful
+14:33:19,823  INFO DEBUG:36 - ----------------
+14:33:21,380  INFO DEBUG:26 - AmazonSearch: 
+14:33:29,480  INFO DEBUG:31 - AmazonSearch: Search paramerter entered: 65-inch TV
+14:33:34,722  INFO DEBUG:44 - AmazonSearch: Search index generated
+14:33:37,865  INFO DEBUG:54 - AmazonSearch: Search successful
+14:33:37,866  INFO DEBUG:55 - ----------------
+14:33:41,033  INFO DEBUG:16 - AmazonProductPage: 
+14:33:42,006  INFO DEBUG:18 - AmazonProductPage: PRODUCT NAME: Leo 65 inch Led Tv Screen Guard/Protector: Amazon.in: Electronics
+14:33:44,423  INFO DEBUG:20 - AmazonProductPage: PRODUCT PRICE: rupees 14,500
+14:33:46,857  INFO DEBUG:30 - AmazonProductPage: Item added to cart
+14:33:48,588  INFO DEBUG:34 - AmazonProductPage: Product page exited successfully
+14:33:48,588  INFO DEBUG:35 - ----------------
+14:33:48,595  INFO DEBUG:13 - AmazonCart:
+14:33:52,565  INFO DEBUG:16 - AmazonCart: ProductName2:Leo 65 inch Led Tv Screen Guard/Protector/Shield for LED, LCD, 3DTV, Plasma, Curved TV – Tempered Fiber Glass
+14:33:54,977  INFO DEBUG:28 - **********************
+14:33:54,978  INFO DEBUG:29 - AmazonCart: ProductName: Leo 65 inch Led Tv Screen Guard/Pro
+14:33:54,978  INFO DEBUG:30 - AmazonCart: ProductPrice: 14,500
+14:33:54,978  INFO DEBUG:31 - 
+14:33:54,978  INFO DEBUG:32 - AmazonCart: ProductName2: Leo 65 inch Led Tv Screen Guard/Pro
+14:33:54,978  INFO DEBUG:33 - AmazonCart: ProductPrice2: 14,500
+14:33:54,978  INFO DEBUG:34 - **********************
+14:33:54,979  INFO DEBUG:41 - AmazonCart: Cart exited successfully
+14:33:54,979  INFO DEBUG:42 - ----------------
+14:33:54,983  INFO DEBUG:13 - AmazonLogout: 
+14:34:04,481  INFO DEBUG:28 - Logout successful
