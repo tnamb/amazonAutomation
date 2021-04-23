@@ -3,11 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-	<class name="com.amazon.testPages.AmazonLogin"/>  	  	
-	<class name="com.amazon.testPages.AmazonSearch"/>
-	<class name="com.amazon.testPages.AmazonProductPage"/>
-	<class name="com.amazon.testPages.AmazonCart"/>
-	<class name="com.amazon.testPages.AmazonLogout"/>
+	<class name="com.amazon.testCases.TestAmazonLogin"/>  	  	
+	<class name="com.amazon.testCases.TestAmazonSearch"/>
+	<class name="com.amazon.testCases.TestAmazonProductPage"/>
+	<class name="com.amazon.testCases.TestAmazonCart"/>
+	<class name="com.amazon.testCases.TestAmazonLogout"/>
   </classes>
   </test> 
 </suite> 

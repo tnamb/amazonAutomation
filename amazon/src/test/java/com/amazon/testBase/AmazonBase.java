@@ -115,8 +115,8 @@ public class AmazonBase
 
         public static void makeEqualInLength(String firstName, String secondName)
             {
-                productName = firstName.substring(0, 40);
-                productName2 = secondName.substring(0, 40);
+                productName = firstName.substring(0, 35);
+                productName2 = secondName.substring(0, 35);
             }
 
         public static void trimName()
@@ -124,17 +124,17 @@ public class AmazonBase
                 if (productName.startsWith("amazon.in"))
                     productName = productName.substring(10);
 
-                if (productName.startsWith("buy"))
+                if (productName.startsWith("Buy"))
                     productName = productName.substring(4);
                 
-                if (productName.startsWith(" buy"))
+                if (productName.startsWith(" Buy"))
                     productName = productName.substring(5);
             }
 
         public static void trimPrice()
             {
                 
-                productPrice2 = productPrice2.substring(2, productPrice2.length() - 3);
+                productPrice2 = productPrice2.substring(1, productPrice2.length() - 3);
             }
 
         public boolean isElementPresent(By by)

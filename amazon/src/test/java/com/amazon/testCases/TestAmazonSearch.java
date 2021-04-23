@@ -46,7 +46,7 @@ public class TestAmazonSearch extends AmazonBase
                     Assert.assertTrue(isElementPresent(By.xpath(paths.getString("searchBar_xpath"))), "Search bar is not visible");
                 find(paths.getString("listWidget_xpath"));
                 androidDriver
-                        .findElementByAndroidUIAutomator(paths.getString("scroll1") + searchIndex + paths.getString("scroll2"))
+                        .findElementByAndroidUIAutomator(paths.getString("scroll1") + 4 + paths.getString("scroll2"))
                         .click();
                 
                 takeScreenshot();

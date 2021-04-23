@@ -7,7 +7,6 @@ import com.amazon.testBase.AmazonBase;
 
 public class AmazonLogout extends AmazonBase
     {
-        @Test(priority = 5)
         public void logout()
             {
                     log.info("AmazonLogout: ");

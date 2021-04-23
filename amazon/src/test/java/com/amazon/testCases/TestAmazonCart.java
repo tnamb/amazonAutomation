@@ -17,7 +17,7 @@ public class TestAmazonCart extends AmazonBase
                     
                 productName2 = findTextUsingClassName(paths.getString("productName2"));
                 
-                productPriceToCompare.append(productPrice + paths.getString("suffix"));
+                productPriceToCompare.append(paths.getString("rupeeSymbol") + productPrice + paths.getString("suffix"));
                               
                 productPrice2 = findTextUsingXpath(paths.getString("productPrice2-one"), paths.getString("productPrice2-two"), productPriceToCompare);
                               

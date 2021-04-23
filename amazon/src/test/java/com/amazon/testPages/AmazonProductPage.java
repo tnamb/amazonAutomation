@@ -6,7 +6,6 @@ import com.amazon.testBase.AmazonBase;
 
 public class AmazonProductPage extends AmazonBase
     {
-        @Test(priority = 3)
         public void ProductPage() throws InterruptedException
             {
                 Thread.sleep(2000);

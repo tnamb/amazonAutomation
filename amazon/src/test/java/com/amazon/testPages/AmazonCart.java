@@ -7,7 +7,6 @@ import com.amazon.testBase.AmazonBase;
 
 public class AmazonCart extends AmazonBase
     {
-        @Test(priority = 4)
         public void Cart()
             {   
                     log.info("AmazonCart:");
@@ -17,7 +16,7 @@ public class AmazonCart extends AmazonBase
                     
                 productName2 = findTextUsingClassName(paths.getString("productName2"));
                 
-                productPriceToCompare.append(productPrice + paths.getString("suffix"));
+                productPriceToCompare.append(paths.getString("rupeeSymbol") + productPrice + paths.getString("suffix"));
                               
                 productPrice2 = findTextUsingXpath(paths.getString("productPrice2-one"), paths.getString("productPrice2-two"), productPriceToCompare);
                               

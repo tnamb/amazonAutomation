@@ -7,7 +7,6 @@ import com.amazon.testBase.AmazonBase;
 
 public class AmazonLogin extends AmazonBase
     {
-        @Test(priority=1)
         public void Login() throws InterruptedException
             {                           
                     log.info("AmazonLogin: ");
