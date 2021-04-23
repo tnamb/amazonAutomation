@@ -1,10 +1,10 @@
-package com.amazon.testPages;
+package com.amazon.testCases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import com.amazon.testBase.AmazonBase;
 
-public class AmazonProductPage extends AmazonBase
+public class TestAmazonProductPage extends AmazonBase
     {
         @Test(priority = 3)
         public void ProductPage() throws InterruptedException

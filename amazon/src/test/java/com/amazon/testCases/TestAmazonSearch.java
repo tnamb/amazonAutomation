@@ -1,4 +1,4 @@
-package com.amazon.testPages;
+package com.amazon.testCases;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import com.amazon.testBase.AmazonBase;
 
 import io.appium.java_client.android.AndroidElement;
 
-public class AmazonSearch extends AmazonBase
+public class TestAmazonSearch extends AmazonBase
     {     
         @Test(priority = 2)
         public void search() throws InterruptedException, MalformedURLException

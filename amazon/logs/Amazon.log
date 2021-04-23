@@ -1,1 +1,5 @@
-09:17:01,082  INFO Practice:31 - I'm in practice
+13:23:08,604  INFO DEBUG:37 - AmazonSearch: 
+13:23:12,002  INFO DEBUG:42 - AmazonSearch: Search paramerter entered: 65-inch TV
+13:23:17,278  INFO DEBUG:53 - AmazonSearch: Search index generated
+13:23:18,659  INFO DEBUG:61 - AmazonSearch: Search successful
+13:23:18,659  INFO DEBUG:62 - ----------------

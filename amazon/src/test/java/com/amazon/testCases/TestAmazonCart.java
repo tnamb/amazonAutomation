@@ -1,11 +1,11 @@
-package com.amazon.testPages;
+package com.amazon.testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.amazon.testBase.AmazonBase;
 
-public class AmazonCart extends AmazonBase
+public class TestAmazonCart extends AmazonBase
     {
         @Test(priority = 4)
         public void Cart()

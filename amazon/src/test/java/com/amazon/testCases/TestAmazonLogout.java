@@ -1,11 +1,11 @@
-package com.amazon.testPages;
+package com.amazon.testCases;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.amazon.testBase.AmazonBase;
 
-public class AmazonLogout extends AmazonBase
+public class TestAmazonLogout extends AmazonBase
     {
         @Test(priority = 5)
         public void logout()

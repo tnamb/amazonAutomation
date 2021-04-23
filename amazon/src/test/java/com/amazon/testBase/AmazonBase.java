@@ -1,13 +1,20 @@
 package com.amazon.testBase;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeSuite;
@@ -28,6 +35,7 @@ public class AmazonBase
         public static int searchIndex;
         static DesiredCapabilities caps = new DesiredCapabilities();
         public static StringBuilder productPriceToCompare = new StringBuilder();
+        public static List<AndroidElement> list;
 
         public static String productName;
         public static String productPrice;
@@ -83,10 +91,21 @@ public class AmazonBase
             {
                 androidDriver.findElement(By.xpath(locator)).sendKeys(value);
             }
-
-        public void findText()
+        
+        public List<AndroidElement> findListUsingClassName(String locator)
             {
+                return androidDriver.findElements(By.className(locator));
+            }
 
+        public String findTextUsingClassName(String locator)
+            {
+                return androidDriver.findElement(By.className(locator)).getText();
+            }
+
+        public String findTextUsingXpath(String locator1, String locator2, StringBuilder value)
+            {
+               return androidDriver.findElement(By.xpath(
+                        locator1 + value + locator2)).getText();                   
             }
 
         public String findTextFromList(String locator, int value)
@@ -107,11 +126,15 @@ public class AmazonBase
 
                 if (productName.startsWith("buy"))
                     productName = productName.substring(4);
+                
+                if (productName.startsWith(" buy"))
+                    productName = productName.substring(5);
             }
 
         public static void trimPrice()
             {
-                productPrice2 = productPrice2.substring(1, productPrice2.length() - 3);
+                
+                productPrice2 = productPrice2.substring(2, productPrice2.length() - 3);
             }
 
         public boolean isElementPresent(By by)
@@ -143,4 +166,21 @@ public class AmazonBase
 
                 return number;
             }
+        
+        public static void takeScreenshot()
+        {
+            File scrFile = ((TakesScreenshot)androidDriver).getScreenshotAs(OutputType.FILE);
+            String filename = UUID.randomUUID().toString();
+            File targetFile = new File(System.getProperty("user.dir") + "/screenshots/" + filename + ".jpg");
+            try 
+                {
+                    FileUtils.copyFile(scrFile, targetFile);
+                } 
+            
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        
+        
     }
