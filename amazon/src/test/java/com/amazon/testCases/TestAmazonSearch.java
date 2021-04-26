@@ -34,8 +34,6 @@ public class TestAmazonSearch extends AmazonBase
 
                     Assert.assertTrue(isElementPresent(By.xpath(paths.getString("enterKey"))), "Keyboard is not visible");
                 click(paths.getString("enterKey"));
-
-                //list = androidDriver.findElements(By.className(paths.getString("listClassName")));
                 
                 list = findListUsingClassName(paths.getString("listClassName"));
                 searchIndex = RandomNumber(list.size());
